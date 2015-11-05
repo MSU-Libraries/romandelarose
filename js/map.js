@@ -10,4 +10,13 @@ function runMap() {
         accessToken: 'pk.eyJ1IjoiZGV2aW5oaWdnaW5zIiwiYSI6ImNpZ2t2d2QyMzAwNTN0ZW0zaHlxcHB5MWsifQ.ZXFzdj4xBkG6KhRjEHNWwg'
     }).addTo(map);
 
+    manuscripts = getCsvData();
+    console.log(manuscripts);
+}
+
+
+function getCsvData() {
+
+    return Papa.parse("data/romandelarosedata.csv", {"header": true});
+
 }
