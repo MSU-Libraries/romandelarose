@@ -1,4 +1,4 @@
-Id,Name,Institution,Origin,Coordinates,Material,Number of folios,Height mm,Width mm,Area mm^2,Total Lines (#Folios x Columns per Page x Lines per Column x 2),Leaves per gathering,Lines per column,Number of illustrations,Date start,Date end,Date Delta,Columns per folio,Texts,Folios with 1 illustration,Folios with More than 1 illustration
+Id,Name,Institution,Origin,Coordinates,Material,Number of folios,Height mm,Width mm,Area mm^2,Total Lines (#Folios x Columns per Page x Lines per Column x 2),Leaves per gathering,Lines per column,Number of illustrations,Datestart,Dateend,Date Delta,Columns per folio,Texts,Folios with 1 illustration,Folios with More than 1 illustration
 AB142,A.B. 142,Bibliothek der Staatlichen Kunstakademie,France,"51.230615, 6.77388700000005",Parchment,143,290,210,60900,22880,8,40,29,1300,1400,100,2,1,,
 AlbiRochegude103,Albi Rochegude 103,"Bibliotheque Municipale (BM), Albi",France,"43.923263, 2.14316800000005",parchment,139,300,200,60000,22240,,40,16,1400,1500,100,2,1,10,3
 Amiens437,Amiens 437,"Bibliotheque Municipale (BM), Amiens",France,"49.8977612, 2.30429279999998",parchment,143,281,203,57043,21164,,37,2,1350,1400,50,2,3,2,0

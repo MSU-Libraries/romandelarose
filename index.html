@@ -6,10 +6,16 @@
 
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <link rel="stylesheet" href="map.css" />
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css"/>
+    <link rel='shortcut icon' href='favicon.ico'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
+    <script src="js/LeafletSlider/SliderControl.js"></script>
     <script src="js/papaparse.min.js"></script>
     <script src="js/map.js"></script>
+    <!-- Include this library for mobile touch support  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.2/jquery.ui.touch-punch.min.js"></script>
     <script>
 
         $(document).ready(function(){
@@ -20,8 +26,10 @@
 </head>
 
 <body>
-    <div id="map"></div>
-
+    <div id="viewscreen">
+        <div id="map"></div>
+        <div id="infopane"></div>
+    </div>
 </body>
 
 </html>
