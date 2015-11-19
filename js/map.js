@@ -119,17 +119,19 @@ function generateInfoPane(data) {
             html += "<li>" + value["Name"] + "</li>";
         })
         html += "</ul>";
+        html += "<div id='links'>"
+        html += "</div>"
     }
     $.each(data, function(index, record){
         html += "<h4 class='item-heading'>" + record["Name"] + "</h4>";
-        var metadata = {
-            record["Folios"]: "folios",
-            record["Height mm"] + "x" + record["Width mm"]: "mm",
-            record["Number of illustrations"]: "illustrations",
-            record["Datestart"] + "-" + record["Dateend"]: "",
-        }    
+        var metadata = [
+            [record["Number of folios"], "folios"],
+            [record["Height mm"] + "x" + record["Width mm"], "mm"],
+            [record["Number of illustrations"], "illustrations"],
+            [record["Datestart"] + "-" + record["Dateend"], ""],
+        ];
         $.each(metadata, function(key, value){
-            html += "<div class='metadata'><span class='meta-value'>"+key+"</span><span class='meta-listing'>"+value+"</span></div>";
+            html += "<div class='metadata'><span class='meta-value'>"+value[0]+" </span><span class='meta-listing'>"+value[1]+"</span></div>";
         });
 
     });
